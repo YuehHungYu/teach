@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>猜數字</title>
+</head>
+<body>
+<script>
+    var a =30; //Math.Random()*100;
+    var numInput=window.prompt("請輸入0-50","");
+    do{
+        if(Number(numInput)>a){
+            window.alert("請小一點");
+            numInput=window.prompt("請輸入0-50","");
+        }else if(Number(numInput)<a){
+            window.alert("請大一點");
+            numInput=window.prompt("請輸入0-50","");
+        }
+    }while(Number(numInput)!==a)
+    window.alert("恭喜答對了!"/*+"答案"+a*/);
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欄位群組</title>
+    <style>
+        col#ex1{background-color: lightgreen;}
+        col#ex2{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>list</caption>
+        <colgroup>
+            <col id="ex1">
+            <col span="2" id="ex2">
+        </colgroup>
+        <thead>
+            <tr><th>店名</th><th>地址</th><th>時間</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>天母店</td><td>台北市</td><td rowspan="2">0900-2200</td></tr>
+            <tr><td>吉安店</td><td>花蓮市</td></tr>
+            <tr><td>大赦店</td><td>高雄市</td><td>2200-12000</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+    <style>
+        caption{margin-top: 5px;color: blue;caption-side: bottom;}
+        tr:nth-child(2n+1){background-color: aqua;} /*重點*/
+        tr:nth-child(2n){background-color: red;} /*重點*/
+        table{border: 1px solid grey;}
+        tbody{
+            border-top-width: 1px;
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+        }    
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr><td>店名</td><td>地址</td><td>時間</td></tr>
+            <tr><td>天母店</td><td>台北市</td><td>0900-1800</td></tr>
+            <tr><td>大赦店</td><td>高雄市</td><td>0800-2200</td></tr>
+            <tr><td>屏東店</td><td>屏東市</td><td>0900-2100</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

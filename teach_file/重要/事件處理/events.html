@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #test{
+            background-color: #ffcccc;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>事件處理</h3>
+    <span id="test" 
+        onmouseover="over(this);"
+        onmouseout="out(this);"
+        onmousedown="down(this);"
+        onmouseup="up(this);"
+        >點我</span>
+    <script>
+        function down(elem){
+            elem.style.fontWeight="bold";
+        }
+        function up(elem){
+            elem.style.fontWeight="normal";
+        }
+        function over(elem){
+            elem.style.backgroundColor="#ddaaaa";
+        }
+        function out(elem){
+            elem.style.backgroundColor="#ffcccc"
+        }
+    </script>
+    </body>
+</html>

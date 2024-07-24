@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習</title>
+    <style>
+        #change{
+            color:rgb(255,0, 0);
+        }
+    </style>
+</head>
+<body>
+    <p>分數:<span id="change"></span></p>
+    <script>
+        let a =prompt("輸入");
+        let b= parseInt(a/10);
+        let c= document.getElementById("change");
+        if(b>10){
+            alert("輸入錯誤!!");
+            c.innerHTML="錯誤";
+        }else{
+            switch(b){
+            case 10:
+                alert("S");
+                c.innerHTML="S";
+                break;
+            case 9:
+                alert("A");
+                c.innerHTML="A";
+                break;
+            case 8:
+                alert("B");
+                c.innerHTML="B";
+                break;
+            case 7:
+                alert("C");
+                c.innerHTML="C";
+                break;
+            case 6:
+                alert("D");
+                c.innerHTML="D";
+                break;
+            default:
+                alert("F");
+                c.innerHTML="F";
+                break;
+            }
+        }
+        function my(){
+            window.location.reload();
+        }
+        setTimeout('my()',1800);
+    </script>
+</body>
+</html>
