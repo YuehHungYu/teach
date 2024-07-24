@@ -1,0 +1,32 @@
+要使用 Git Bash
+
+創建鑰匙
+ssh-keygen
+
+id_rsa(私人不能給)  
+id_rsa.pub(公開)
+
+公金鑰匙
+/c/Users/88691/.ssh/
+
+基本推程式碼
+1.create a new repository on the command line
+
+echo "# TEST" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin 要推的網址 (https://github.com/yuehyu/TEST.git)
+git push -u origin main
+
+2.or push an existing repository from the command line
+
+git remote add origin 要推的網址 (https://github.com/yuehyu/TEST.git)
+git branch -M main
+git push -u origin main
+
+3.新增程式碼
+git add . 
+git commit -m  "備註"
+git push

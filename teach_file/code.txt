@@ -1,0 +1,14 @@
+CMD 命令提示字元
+
+1. 創建檔案
+
+type NUL>檔名.類型
+
+2. 開啟 VSCODE
+
+code.cmd .
+
+3. 開啟檔案
+
+start 檔名.類型
+

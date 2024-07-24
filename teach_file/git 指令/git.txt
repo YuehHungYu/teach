@@ -1,0 +1,25 @@
+1.git init
+	A) 初始化 git
+
+2.git add .
+	A) 一次將目前所有檔案都加入版本控制
+	B) git add +檔案，將檔案加入版本控制
+
+3.git commit -m "create"
+	A) 直接在 terminal 新增 commit message。
+
+補: git commit –am “版本敘述”：將所有檔案加入版本控制並建立版本
+	（git add + git commit –m”版本敘述”）的綜合功能。
+
+4.git branch -M main
+	A) 新增分支並命名。
+
+5.git remote add origin (git作品網址)
+	A) 新增遠端版本庫
+
+6.git push -u origin main
+	A) git push + 遠端主機(git hub)名稱(通常叫做 origin)+本地分支名稱：
+		將本地已經 commit 的版本上傳更新到 git hub。
+		若之後有在本地新增 branch，也是一樣用此語法。
+	B)  git push -f 
+		不管什麼直接推上去GitHub
